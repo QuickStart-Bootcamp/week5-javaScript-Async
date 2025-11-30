@@ -1,0 +1,9 @@
+
+#divGiphy {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#divGiphy > img {
+  max-width: 200px;
+}
