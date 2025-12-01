@@ -1,19 +1,13 @@
 // A synchronous Senario: Api Connection
-// API: https://jsonplaceholder.typicode.com/users
-// 1- Is connected to Api --> Promise Resolve --> then after that do something
-// 2- Is NOT connected to Api -- Promise Reject --> catch error
+// A Synchronous Scenario (written in steps):
+// API Connection using Fetch
+//
+// 1. If the API connects successfully → Promise RESOLVES → .then() runs
+// 2. If the API cannot connect        → Promise REJECTS → .catch() runs
 
-// Steps 1: Connect to API
+// Step 1: Call the API using fetch()
+// fetch() ALWAYS returns a Promise
 
-
-// let p2 = fetch ("https://jsonplaceholder.typicode.com/users")
-
-// p2
-//   .then((response)=>{
-//     return response.json()
-//   })
-//   .then((data)=>{console.log(data)})
-//   .catch((error)=>{console.log(error)})
 
 
 
@@ -22,14 +16,3 @@ let p1 = fetch ("https://api.giphy.com/v1/gifs/search?api_key=tMvPYMnXds1JCRDTG8
   .then ((response)=>{return (response.json())})
   .then ((json)=>{console.log (json)})
   .catch((error)=>{console.log (error)})
-
-// p1
-// .then((data)=>{
-//   return data.json()
-// })
-// .then ((data)=>{
-//   console.log (data)
-// })
-// .catch((error)=>{
-//   console.log (error)
-// })
