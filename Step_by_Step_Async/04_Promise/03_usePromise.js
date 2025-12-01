@@ -28,8 +28,6 @@ let PromiseOrderFood = new Promise((resolve, reject)=>{
 
   PromiseOrderFood
     .then((data)=>{console.log ("task2", data)})   // This block runs if the promise is RESOLVED (success)
-    .then((data)=>{console.log ("task3", data)})
-    .then((data)=>{console.log ("task4", data)})
     .catch((error)=>{console.log (error)})        // This block runs if the promise is REJECTED (failure)
 
 
