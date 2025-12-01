@@ -26,23 +26,11 @@ let PromiseOrderFood = new Promise((resolve, reject)=>{
 
 // Consuming the Promise using .then() and .catch()
 
-// PromiseOrderFood
-//   .then((data)=>{
-//     console.log (data)
-//     console.log ("task2")
-//     console.log ("Eating pizza")
-//   })
-//   .catch((error)=>{
-//     console.log (error)
-//   })
-
-
-
   PromiseOrderFood
-    .then((data)=>{console.log ("task2", data)})
+    .then((data)=>{console.log ("task2", data)})   // This block runs if the promise is RESOLVED (success)
     .then((data)=>{console.log ("task3", data)})
     .then((data)=>{console.log ("task4", data)})
-    .catch((error)=>{console.log (error)})
+    .catch((error)=>{console.log (error)})        // This block runs if the promise is REJECTED (failure)
 
 
 

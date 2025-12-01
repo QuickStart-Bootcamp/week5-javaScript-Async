@@ -13,7 +13,7 @@ function task1 () {
 }
 
 function task2 () {
-  console.log ("task2: Getting data from database")
+  console.log ("task2: Displaying data from database")
 }
 
 task1()
