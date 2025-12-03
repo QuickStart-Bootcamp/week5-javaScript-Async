@@ -3,7 +3,7 @@
 async function fetchData () {
   try {
     let response = await fetch ("https://api.giphy.com/v1/gifs/search?api_key=GTP3Xvawyk4Vo2axsgQQx3gUp5IthveU&q=cry&limit=25&offset=0&rating=g&lang=en&bundle=messaging_non_clips")
-    let giphyJson = await (response.json())
+    let giphyJson = await response.json()
     let giphyArray = giphyJson.data
 
     giphyArray.forEach(element => {
