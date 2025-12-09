@@ -7,5 +7,8 @@ promise1
   .then ((json)=> {
     return json.data
   })
+  .then ((data) => {
+        console.log  (data)
+})
   
 console.log (promise1)
